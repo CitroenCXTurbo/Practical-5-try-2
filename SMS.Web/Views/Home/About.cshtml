@@ -1,0 +1,27 @@
+@model AboutViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="box">
+    <a href="/home/about">About Page</a>
+    <a href="/home/index">Home Page</a>
+    <a href="/home/Privacy">Privacy Page</a>
+    </span>
+</div>
+
+<style>
+.box{
+    border: 1px solid #ff0000;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+</style>
+
+<div class="text-centre">
+    <h1>@Model.Title</h1>
+    <p>@Model.Messageout</p>
+    <p>The comapany was formed on @Model.FormedString</p>
+
+</div>

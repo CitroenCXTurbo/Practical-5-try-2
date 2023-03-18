@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="box">
+    <a href="/home/about">About Page</a>
+    <a href="/home/index">Home Page</a>
+    <a href="/home/Privacy">Privacy Page</a>
+    </span>
+</div>
+
+<style>
+.box{
+    border: 1px solid #ff0000;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+</style>
+
+<div class="text-center">
+    <div>
+        <h1>Home Page</h1>
+        <p>This is the default page displayed when the application loads</p>
+        <p>Today is <b>@DateTime.Now.ToLongDateString()</b></p>
+    </div>
+
+    <div>
+        <H1>Viewbag</H1>
+        <p>@ViewBag.ScriptMessage <b>@ViewBag.LongTime</b></p>
+    </div>
+
+    <div>
+        <h1>Q5 method</h1>
+    </div>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
